@@ -1,0 +1,20 @@
+{
+  "gpu_name": "Tesla T4",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "dtype": "fp16",
+  "backend": "huggingface_static_batching",
+  "input_tokens": 1024,
+  "max_new_tokens": 256,
+  "requests_per_level": 32,
+  "drift_check_aborted": true,
+  "results": [
+    {
+      "batch_size": 1,
+      "aggregate_tps": 24.72,
+      "p50_ms": 10431.5,
+      "p99_ms": 10623.8,
+      "peak_vram_gb": 3.06,
+      "oom": false
+    }
+  ]
+}

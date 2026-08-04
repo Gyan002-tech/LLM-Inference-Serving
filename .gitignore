@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.egg-info/
+
+# HuggingFace model cache (too large)
+~/.cache/huggingface/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# environments
+venv
+.claude
+
+# personal planning / resume-prep notes — not for publication
+inference-serving-project-summary.md
+vllm_server.log
+
+# personal learning scratch space — not part of any measured row
+scratch/

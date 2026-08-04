@@ -1,0 +1,16 @@
+{
+  "gpu_name": "Tesla T4",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "dtype": "nf4",
+  "config": "nf4_4bit_kvcache",
+  "input_tokens": 1024,
+  "max_new_tokens": 256,
+  "ttft_ms": 295.5,
+  "tps": 16.98,
+  "p50_ms": 15315.9,
+  "p99_ms": 16117.2,
+  "peak_vram_gb": 1.267,
+  "n_requests": 30,
+  "weights_vram_gb": 1.084,
+  "perplexity_wikitext2": 9.9256
+}

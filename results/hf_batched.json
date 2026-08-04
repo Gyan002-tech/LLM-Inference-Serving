@@ -1,0 +1,44 @@
+{
+  "gpu_name": "Tesla T4",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "dtype": "fp16",
+  "backend": "huggingface_static_batching",
+  "input_tokens": 1024,
+  "max_new_tokens": 256,
+  "requests_per_level": 32,
+  "drift_check_aborted": false,
+  "results": [
+    {
+      "batch_size": 1,
+      "aggregate_tps": 22.7,
+      "p50_ms": 11241.4,
+      "p99_ms": 12206.1,
+      "peak_vram_gb": 3.06,
+      "oom": false
+    },
+    {
+      "batch_size": 2,
+      "aggregate_tps": 43.63,
+      "p50_ms": 11704.2,
+      "p99_ms": 12824.4,
+      "peak_vram_gb": 3.23,
+      "oom": false
+    },
+    {
+      "batch_size": 4,
+      "aggregate_tps": 78.67,
+      "p50_ms": 13016.7,
+      "p99_ms": 13091.1,
+      "peak_vram_gb": 3.572,
+      "oom": false
+    },
+    {
+      "batch_size": 8,
+      "aggregate_tps": 104.57,
+      "p50_ms": 19565.9,
+      "p99_ms": 19660.5,
+      "peak_vram_gb": 4.253,
+      "oom": false
+    }
+  ]
+}

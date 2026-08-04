@@ -1,0 +1,44 @@
+{
+  "gpu_name": "Tesla T4",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "dtype": "fp16",
+  "backend": "vllm",
+  "attention_expected": "xformers/SDPA fallback (sm_75, no FlashAttention-2)",
+  "input_tokens": 1024,
+  "max_new_tokens": 256,
+  "requests_per_level": 32,
+  "results": [
+    {
+      "concurrency": 1,
+      "aggregate_tps": 60.46,
+      "p99_ms": 4367.0,
+      "p50_ms": 4258.8,
+      "n_requests": 32,
+      "wall_s": 135.48
+    },
+    {
+      "concurrency": 2,
+      "aggregate_tps": 112.65,
+      "p99_ms": 4562.3,
+      "p50_ms": 4546.6,
+      "n_requests": 32,
+      "wall_s": 72.72
+    },
+    {
+      "concurrency": 4,
+      "aggregate_tps": 208.44,
+      "p99_ms": 4917.4,
+      "p50_ms": 4910.9,
+      "n_requests": 32,
+      "wall_s": 39.3
+    },
+    {
+      "concurrency": 8,
+      "aggregate_tps": 345.85,
+      "p99_ms": 5932.6,
+      "p50_ms": 5921.9,
+      "n_requests": 32,
+      "wall_s": 23.69
+    }
+  ]
+}
