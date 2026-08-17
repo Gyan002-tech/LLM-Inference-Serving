@@ -198,7 +198,7 @@ carries 35.1 ms/token of non-bandwidth overhead against vLLM's 6.9 ms.
 
 **HuggingFace's batching is not the weak part.** Its scaling efficiency matches vLLM's at
 batch 2 and is level at batch 4 (86.6% vs 86.2%). Only at batch 8 does it fall behind — 57.6%
-vs 71.5% — and there it uses just **12.6% of memory bandwidth** against vLLM's 41.7%, so it is
+vs 71.5% — and there it uses just **12.6% of memory bandwidth** against the vLLM's 41.7%, so it is
 idling the hardware for a software reason, not hitting a limit.
 
 The 15.49× headline therefore decomposes as:
